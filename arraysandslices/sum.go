@@ -7,3 +7,9 @@ func Sum(nums []int) int {
 	}
 	return sum
 }
+
+func SumAll(numbersToSum ...[]int) []int {
+	lengthofNumbers := len(numbersToSum)
+	sums := make([]int, lengthofNumbers)
+	return nil
+}

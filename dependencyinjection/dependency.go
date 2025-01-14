@@ -1,10 +1,11 @@
 package dependencyinjection
 
 import (
+	"bytes"
 	"fmt"
-	"io"
 )
 
-func Greet(writer io.Writer, name string) {
-	fmt.Fprintf(writer, "Hello, %s", name)
+func Greet(buffer *bytes.Buffer, name string) {
+	// fmt.Printf("Hello, %s", name)
+	fmt.Fprintf(buffer, "Hello, %s", name)
 }
